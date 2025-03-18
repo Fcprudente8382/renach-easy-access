@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import React, { useState, ReactElement } from 'react';
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import AnimatedCard from './AnimatedCard';
@@ -59,7 +59,8 @@ const StepperForm = ({ steps, onComplete }: StepperFormProps) => {
     const StepComponent = steps[currentStep].component;
     
     if (React.isValidElement(StepComponent)) {
-      return React.cloneElement(StepComponent, {
+      // Type assertion to let TypeScript know this is a valid React element that can accept our props
+      return React.cloneElement(StepComponent as ReactElement<StepProps>, {
         onNext: goToNextStep,
         formData,
         updateFormData,

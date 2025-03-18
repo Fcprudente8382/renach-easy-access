@@ -11,9 +11,9 @@ const Footer = () => {
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-white font-semibold text-sm">R</span>
+                <span className="text-white font-semibold text-sm">D</span>
               </div>
-              <span className="font-semibold text-lg">Renach Fácil</span>
+              <span className="font-semibold text-lg">Druu Renach</span>
             </Link>
             <p className="text-muted-foreground max-w-sm">
               Facilitando o acesso ao seu número RENACH para que você possa iniciar seu processo de primeira habilitação com tranquilidade.
@@ -56,7 +56,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start space-x-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 text-muted-foreground"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
-                <span className="text-muted-foreground">contato@renachfacil.com.br</span>
+                <span className="text-muted-foreground">contato@druurenach.com.br</span>
               </li>
               <li className="flex items-start space-x-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 text-muted-foreground"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
@@ -67,7 +67,7 @@ const Footer = () => {
         </div>
         <div className="border-t mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {currentYear} Renach Fácil. Todos os direitos reservados.
+            &copy; {currentYear} Druu Renach. Todos os direitos reservados.
           </p>
           <div className="mt-4 md:mt-0 flex space-x-6">
             <Link to="/termos" className="text-sm text-muted-foreground hover:text-primary transition-colors">

@@ -47,9 +47,9 @@ const Header = () => {
             onClick={closeMenu}
           >
             <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-white font-semibold text-sm">R</span>
+              <span className="text-white font-semibold text-sm">D</span>
             </div>
-            <span className="font-semibold text-lg tracking-tight">Renach Fácil</span>
+            <span className="font-semibold text-lg tracking-tight">Druu Renach</span>
           </Link>
 
           {/* Desktop Navigation */}

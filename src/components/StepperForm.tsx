@@ -5,6 +5,12 @@ import { Progress } from "@/components/ui/progress";
 import AnimatedCard from './AnimatedCard';
 import { ArrowLeft, ArrowRight, CheckCircle2 } from 'lucide-react';
 
+type StepProps = {
+  onNext: (data?: Record<string, any>) => void;
+  formData: Record<string, any>;
+  updateFormData?: (data: Record<string, any>) => void;
+};
+
 type StepperFormProps = {
   steps: {
     title: string;
@@ -51,6 +57,7 @@ const StepperForm = ({ steps, onComplete }: StepperFormProps) => {
 
   const CurrentStepComponent = () => {
     const StepComponent = steps[currentStep].component;
+    
     if (React.isValidElement(StepComponent)) {
       return React.cloneElement(StepComponent, {
         onNext: goToNextStep,
@@ -58,6 +65,7 @@ const StepperForm = ({ steps, onComplete }: StepperFormProps) => {
         updateFormData,
       });
     }
+    
     return StepComponent;
   };
 

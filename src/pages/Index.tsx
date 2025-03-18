@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import RenachForm from '@/components/RenachForm';
+import RenachStepperForm from '@/components/RenachStepperForm';
 import InfoSection from '@/components/InfoSection';
 import AnimatedCard from '@/components/AnimatedCard';
 
@@ -184,12 +184,12 @@ const Index = () => {
               <div className="text-center max-w-3xl mx-auto mb-12">
                 <h2 className="text-3xl font-bold tracking-tighter mb-4">Obtenha seu número RENACH</h2>
                 <p className="text-lg text-muted-foreground">
-                  Preencha o formulário abaixo com seus dados pessoais para gerar seu número RENACH
+                  Siga as etapas abaixo para gerar seu número RENACH
                 </p>
               </div>
             </AnimatedCard>
 
-            <RenachForm />
+            <RenachStepperForm />
           </div>
         </section>
 
